@@ -51,12 +51,12 @@ describe('BloomFilter', () => {
   });
 
   it('should insert strings correctly and return true when checking for inserted values', () => {
-    people.forEach(person => bloomFilter.insert(person));
+    people.forEach((person) => bloomFilter.insert(person));
 
-    expect(bloomFilter.mayContain('Bruce Wayne')).toBeTruthy();
-    expect(bloomFilter.mayContain('Clark Kent')).toBeTruthy();
-    expect(bloomFilter.mayContain('Barry Allen')).toBeTruthy();
+    expect(bloomFilter.mayContain('Bruce Wayne')).toBe(true);
+    expect(bloomFilter.mayContain('Clark Kent')).toBe(true);
+    expect(bloomFilter.mayContain('Barry Allen')).toBe(true);
 
-    expect(bloomFilter.mayContain('Tony Stark')).toBeFalsy();
+    expect(bloomFilter.mayContain('Tony Stark')).toBe(false);
   });
 });

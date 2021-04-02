@@ -1,6 +1,6 @@
 # JavaScript 演算法與資料結構
 
-[![build status](https://travis-ci.org/trekhleb/javascript-algorithms.svg?branch=master)](https://travis-ci.org/trekhleb/javascript-algorithms)
+[![CI](https://github.com/trekhleb/javascript-algorithms/workflows/CI/badge.svg)](https://github.com/trekhleb/javascript-algorithms/actions?query=workflow%3ACI+branch%3Amaster)
 [![codecov](https://codecov.io/gh/trekhleb/javascript-algorithms/branch/master/graph/badge.svg)](https://codecov.io/gh/trekhleb/javascript-algorithms)
 
 這個知識庫包含許多 JavaScript 的資料結構與演算法的基礎範例。
@@ -8,7 +8,19 @@
 
 _Read this in other languages:_
 [_English_](https://github.com/trekhleb/javascript-algorithms/),
-[简体中文](README.zh-CN.md)
+[_简体中文_](README.zh-CN.md),
+[_한국어_](README.ko-KR.md),
+[_日本語_](README.ja-JP.md),
+[_Polski_](README.pl-PL.md),
+[_Français_](README.fr-FR.md),
+[_Español_](README.es-ES.md),
+[_Português_](README.pt-BR.md),
+[_Русский_](README.ru-RU.md),
+[_Türk_](README.tr-TR.md),
+[_Italiana_](README.it-IT.md),
+[_Bahasa Indonesia_](README.id-ID.md),
+[_Українська_](README.uk-UA.md),
+[_Arabic_](README.ar-AR.md)
 
 ## 資料結構
 
@@ -174,7 +186,7 @@ npm test -- 'playground'
 
 下列列出幾個常用的 Big O 標記以及其不同大小資料量輸入後的運算效能比較。
 
-| Big O 標記     | 10個資料量需花費的時間 | 100個資料量需花費的時間 | 1000個資料量需花費的時間  |
+| Big O 標記     | 10個資料量需花費的時間       | 100個資料量需花費的時間       | 1000個資料量需花費的時間        |
 | -------------- | ---------------------------- | ----------------------------- | ------------------------------- |
 | **O(1)**       | 1                            | 1                             | 1                               |
 | **O(log N)**   | 3                            | 6                             | 9                               |
@@ -186,7 +198,7 @@ npm test -- 'playground'
 
 ### 資料結構運作複雜度
 
-| 資料結構                 | 存取      | 搜尋       | 插入      | 刪除      |
+| 資料結構                | 存取      | 搜尋      | 插入      | 刪除      |
 | ----------------------- | :-------: | :-------: | :-------: | :-------: |
 | **陣列**                | 1         | n         | n         | n         |
 | **堆疊**                | n         | n         | 1         | 1         |
@@ -200,12 +212,12 @@ npm test -- 'playground'
 
 ### 陣列排序演算法複雜度
 
-| 名稱                   | 最佳      | 平均      | 最差           | 記憶體    | 穩定      |
-| --------------------- | :-------: | :-------: | :-----------: | :-------: | :-------: |
+| 名稱                   | 最佳      | 平均      | 最差          | 記憶體    | 穩定      |
+| ---------------------- | :-------: | :-------: | :-----------: | :-------: | :-------: |
 | **氣派排序**           | n         | n^2       | n^2           | 1         | Yes       |
 | **插入排序**           | n         | n^2       | n^2           | 1         | Yes       |
 | **選擇排序**           | n^2       | n^2       | n^2           | 1         | No        |
 | **Heap 排序**          | n log(n)  | n log(n)  | n log(n)      | 1         | No        |
-| **合併排序**         | n log(n)  | n log(n)  | n log(n)      | n         | Yes       |
+| **合併排序**           | n log(n)  | n log(n)  | n log(n)      | n         | Yes       |
 | **快速排序**           | n log(n)  | n log(n)  | n^2           | log(n)    | No        |
-| **希爾排序**        | n log(n)  | 由gap sequence決定   | n (log(n))^2  | 1         | No        |
+| **希爾排序**           | n log(n)  | 由gap sequence決定   | n (log(n))^2  | 1         | No        |
